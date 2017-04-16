@@ -1,10 +1,10 @@
-var express = require('express')
-var index = require('./routes/index')
-var path = require('path')
-var logger = require('morgan')
-var bodyParser = require('body-parser')
+import express from 'express'
+import index from './routes/index'
+import path from 'path'
+import logger from 'morgan'
+import bodyParser from 'body-parser'
 
-var server = express()
+const server = express()
 
 //middleware
 server.set('views', path.join(__dirname, 'views'))
