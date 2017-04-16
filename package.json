@@ -5,11 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asantos3026/zsquared.git"
+  },
+  "engines": {
+      "node": "6.8.0"
   },
   "author": "Aileen Santos",
   "license": "ISC",
