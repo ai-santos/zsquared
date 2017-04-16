@@ -7,8 +7,7 @@
     "start": "node dist/server.js",
     "start:dev": "nodemon dist/server.js",
     "build": "babel --copy-files src --out-dir dist",
-    "build:watch": "npm run build -- --watch",
-    "heroku-postbuild": "npm run build"
+    "build:watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
