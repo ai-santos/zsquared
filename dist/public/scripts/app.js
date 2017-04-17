@@ -14,9 +14,9 @@ $(function () {
     }
   }
 
-  var slides = document.querySelectorAll('.slides .slide');
+  var slides = document.querySelectorAll('.slide');
   var currentSlide = 0;
-  var slideInterval = setInterval(nextSlide, 2000);
+  var slideInterval = setInterval(nextSlide, 5000);
 
   function nextSlide() {
     slides[currentSlide].className = 'slide';

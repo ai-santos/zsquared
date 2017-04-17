@@ -12,9 +12,9 @@ $( () => {
     }
   }
 
-  let slides = document.querySelectorAll('.slides .slide');
+  let slides = document.querySelectorAll('.slide');
   let currentSlide = 0;
-  let slideInterval = setInterval(nextSlide,2000);
+  let slideInterval = setInterval(nextSlide, 5000);
 
   function nextSlide(){
     slides[currentSlide].className = 'slide';
