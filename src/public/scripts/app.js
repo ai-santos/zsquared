@@ -11,9 +11,16 @@ $( () => {
       navBar.classList.remove('overlay')
     }
   }
+
+  let slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+  let slideInterval = setInterval(nextSlide, 5000);
+
+  function nextSlide(){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
 })
 
-// $(document).on('scroll', function (e) {
-//     $('.navbar').css('opacity', ($(document).scrollTop() / 500));
-// })
 
