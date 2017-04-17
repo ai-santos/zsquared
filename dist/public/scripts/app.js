@@ -13,8 +13,14 @@ $(function () {
       navBar.classList.remove('overlay');
     }
   }
-});
 
-// $(document).on('scroll', function (e) {
-//     $('.navbar').css('opacity', ($(document).scrollTop() / 500));
-// })
+  var slides = document.querySelectorAll('.slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide, 5000);
+
+  function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+});

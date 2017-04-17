@@ -1,3 +1,8 @@
+.nav-row {
+  width: 100%;
+  height: 100px;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -8,4 +13,53 @@ nav.overlay {
   background-color: #fff;
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
   transition: 0.5s ease;
+}
+
+.carousel-row {
+  width: 100%;
+  height: 500px;
+}
+
+/*
+essential styles:
+these make the slideshow work
+*/
+.slides{
+  position: relative;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+  text-align: center;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
 }
