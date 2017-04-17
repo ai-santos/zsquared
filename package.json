@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/asantos3026/zsquared#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
