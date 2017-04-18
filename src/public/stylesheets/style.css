@@ -15,9 +15,50 @@ nav.overlay {
   transition: 0.5s ease;
 }
 
+.chevron::before {
+  border-style: solid;
+  border-width: 0.10em 0.10em 0 0;
+  content: '';
+  display: inline-block;
+  height: 4.5em;
+  left: 0.85em;
+  position: relative;
+  top: 0.85em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 4.5em;
+}
+
+.chevron.right:before {
+  margin-top: 85px;
+  margin-right: 100px;
+  float: right;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.chevron.left:before {
+  margin-top: 85px;
+  margin-left: 100px;
+  float: left;
+  left: 0.25em;
+  transform: rotate(-135deg);
+}
+
 .carousel-row {
+  margin-top: 100px;
   width: 100%;
   height: 500px;
+}
+
+@media screen and (max-width: 520px) {
+  .navbar img {
+    height: 90px;
+  }
+
+  .slides .slide .showing img {
+    width: 50%;
+  }
 }
 
 /*
@@ -26,6 +67,8 @@ these make the slideshow work
 */
 .slides{
   position: relative;
+  text-align: center;
+  margin-top: 50px;
   height: 500px;
   padding: 0px;
   margin: 0px;
@@ -34,17 +77,18 @@ these make the slideshow work
 
 .slide{
   position: absolute;
-  left: 0px;
-  top: 0px;
+  text-align: center;
   width: 100%;
   height: 100%;
   opacity: 0;
   z-index: 1;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .showing{
@@ -53,13 +97,3 @@ these make the slideshow work
   text-align: center;
 }
 
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
-.slide{
-  font-size: 40px;
-  padding: 40px;
-  box-sizing: border-box;
-}
