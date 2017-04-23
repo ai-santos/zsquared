@@ -42,7 +42,9 @@ body { font-family: sans-serif; }
 }
 
 .carousel-img-rt {
-  margin-left: 30%;
+  margin-top: -30px;
+  margin-left: 50%;
+  zoom: 85%;
 }
 
 /* cell number */
@@ -55,9 +57,24 @@ body { font-family: sans-serif; }
   color: white;
 }
 
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 100px !important;
+  height: 3px !important;
+  margin: 0 8px;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background: #333;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
 .flickity-viewport {
   background-color: #fff;
 }
+
+
 
 // @media screen and (max-width: 520px) {
 //   .content img {
