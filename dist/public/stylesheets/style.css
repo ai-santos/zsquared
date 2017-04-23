@@ -36,6 +36,15 @@ body { font-family: sans-serif; }
   margin-left: 80%;
 }
 
+.carousel-img-pg {
+  margin-top: 50%;
+  margin-left: 60%;
+}
+
+.carousel-img-rt {
+  margin-left: 30%;
+}
+
 /* cell number */
 .carousel-cell:before {
   display: block;
